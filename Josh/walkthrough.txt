@@ -1,0 +1,39 @@
+Walkthrough for Middle Schoolers:
+
+To Start:
+1. create a github account with SAAS email / google sign on
+2. on github, create a repo
+3. in that repo, create a new file `test.py`
+4. go to vscode.dev
+5. click "open remote repo", choose from github --> authorize with google
+6. open the terminal
+7. click "continue working in github codespaces"
+8. bookmark whatever page this creates
+9. click on `test.py` from the browser
+10. click "install python"
+11. add `print("hello world")` to test.py
+12. click the triangle in the top right to run 
+
+To Save:
+1. click on the "Souce Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
+2. click the + on each file to save
+3. type a messange (for example: "Starting Project 2")
+4. click "Commit"
+5. click "Sync Changes"
+
+
+To Access from Home:
+1. go to github.com/features/codespaces
+2. sign in
+3. click "get started for free"
+4. scroll down to "Owned by [Your Name]" nd click the codespace to launch
+
+
+To Set Up a GUI:
+1. open the terminal and click "Ports"
+2. Rollover "Forwarded Address" and click 'Preview in Editor'
+3. run test2.py
+
+To Hide Files in the Editor:
+1. Open VS User Settings (Main menu: File > Preferences > Settings)
+2. Search for files:exclude in the search at the top.
