@@ -30,7 +30,7 @@
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 	"containerEnv": { 
-		"HOME_CT": "/workspaces/Comp-Thinking-8-Test",
-		"PYTHONPATH": "/workspaces/Comp-Thinking-8-Test/libraries/codesters",
+		"HOME_CT": "/workspaces/Computational-Thinking-8",
+		"PYTHONPATH": "$HOME_CT/libraries/codesters"
 	}
 }
