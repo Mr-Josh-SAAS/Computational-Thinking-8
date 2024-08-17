@@ -1,6 +1,4 @@
-import math, time, sys
-
-import codesters
+import math, codesters
 
 # stage.set_background("hauntedhouse")
 s1 = codesters.Sprite("person1",0,-200)
@@ -51,9 +49,9 @@ s2.event_key("d", move_right)
 s2.event_key("q", hide)
 s2.event_key("f", show)
 
-s1.say('test',2)
-print(s1.get_x())
 distance = math.sqrt((s1.get_x() - s2.get_x())**2 + (s1.get_y() - s2.get_y())**2)
+
+print("Game has started. Open GUI to play")
 # for i in range(1000):
 #     print(i)
 #     time.sleep(0.1)
@@ -64,6 +62,5 @@ distance = math.sqrt((s1.get_x() - s2.get_x())**2 + (s1.get_y() - s2.get_y())**2
     # if distance < 50 and s2.hidden:
     #     s2.show()
     #     s1.say("Found you!",3)
-
 
 
