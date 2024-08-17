@@ -3,16 +3,15 @@ Repository and Codespace required for Computational Thinking 8
 
 
 ## Setting Up This Repository for Yourself:
-1. Create a github account with SAAS email / google sign on
+1. Create a github account with SAAS email & google sign on
 2. On this page, click the green button that says "Use this template"
 3. Choose "Create a new repository"
-4. Go to vscode.dev
-5. Click "open remote repo", choose from github --> authorize with google
-6. Open the terminal by typing CTRL~
-7. Click "continue working in github codespaces"
-8. Bookmark the page while you wait for it to build
-9. When it finishes building, select "Hello Codesters" from the file list on the left
-10. Click the triangle in the top right to run "Hello Codesters"
+4. You __MUST__ name it __Computational-Thinking-8__
+5. Click "Code" -> "Codespaces" -> Create Codespace on main
+6. This will begin to build the codespace for the class
+7. Bookmark the page while you wait for it to build by clicking the star in your browser
+8. When it finishes building, select "Hello Codesters" from the file list on the left
+9. Click the triangle in the top right to run "Hello Codesters"
 
 
 ## To Save Your Work:
