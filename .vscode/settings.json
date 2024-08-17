@@ -1,0 +1,12 @@
+{
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "files.exclude": {
+        "**/.*": true,
+        "libraries": true,
+        "requirements.txt": true
+    }
+}
