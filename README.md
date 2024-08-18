@@ -15,9 +15,9 @@ Repository and Codespace required for Computational Thinking 8
 
 
 ## To Save Your Work:
-1. Click on the "Souce Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
+1. Click on the "Source Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
 2. Click the + on each file to save
-3. Type a messange (for example: "Starting Project 2")
+3. Type a message (for example: "Starting Project 2")
 4. Click "Commit"
 5. Click "Sync Changes"
 
