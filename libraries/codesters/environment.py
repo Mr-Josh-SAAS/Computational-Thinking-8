@@ -41,6 +41,10 @@ class StageClass(object):
         "jungle": '',   # CANNOT FIND THIS IMAGE IN SPRITES
     }
 
+    user_images_directory = os.path.realpath(os.path.split(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])[0] + '/Backgrounds')
+    user_images = {name.split('.')[0]:name for name in os.listdir(user_images_directory)}
+    image_dictionary.update(user_images)
+
     def __init__(self):
         self.root = Manager.canvas
         self.canvas = Manager.canvas
@@ -87,6 +91,7 @@ class StageClass(object):
         import glob
         self.sprite_list = glob.glob(self.directory+'/sprites/*')
         self.script_directory = os.path.dirname(os.path.realpath(sys.argv[0]))
+        self.user_images_directory = os.path.realpath(os.path.split(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])[0] + '/Backgrounds/')
 
 
 
@@ -285,12 +290,15 @@ class StageClass(object):
 
             default_img_path = self.directory+"/sprites/"+self.bg_image_name+".gif"
             script_img_path = self.script_directory + "/" + self.bg_image_name + ".gif"
+            user_img_path = os.path.realpath(self.user_images_directory + "/" + self.bg_image_name)
             img_path = None
 
             if os.path.isfile(script_img_path):
                 img_path = script_img_path
             elif os.path.isfile(default_img_path):
                 img_path = default_img_path
+            elif os.path.isfile(user_img_path):
+                img_path = user_img_path
             else:
                 self.bg_image_name = self.image_dictionary['grid']
                 img_path = self.directory + "/sprites/" + self.bg_image_name + ".gif"
