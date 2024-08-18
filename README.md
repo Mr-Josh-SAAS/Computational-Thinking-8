@@ -10,8 +10,8 @@ Repository and Codespace required for Computational Thinking 8
 5. Click "Code" -> "Codespaces" -> Create Codespace on main
 6. This will begin to build the codespace for the class
 7. Bookmark the page while you wait for it to build by clicking the star in your browser
-8. When it finishes building, select "Hello Codesters" from the file list on the left
-9. Click the triangle in the top right to run "Hello Codesters"
+8. When it finishes building, select "welcome_to_ct8" from the file list on the left
+9. Click the triangle in the top right to run the welcome_to_ct8 program and follow the instructions that appear
 
 
 ## To Save Your Work:
