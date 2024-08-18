@@ -908,7 +908,7 @@ class SpriteClass(object):
         self.say_plans.append([text, seconds*50, color, size, font])
 
     def ask(self, text):
-        return raw_input(text+'\n')
+        return input(text+'\n')
 
     def reset_animation(self):
         self.clear_queue()
