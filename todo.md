@@ -1,5 +1,4 @@
 ## Definitely Possible
-custom backgrounds + folder(?)
 quiz proof of concept
 
 
