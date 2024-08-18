@@ -149,6 +149,10 @@ class SpriteClass(object):
 
     }
 
+    user_images_directory = os.path.realpath(os.path.split(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])[0] + '/Images')
+    user_images = {name.split('.')[0]:name for name in os.listdir(user_images_directory)}
+    image_dictionary.update(user_images)
+
     ## PIVOTAL FUNCTIONS ##
     def __init__(self, image, x=0, y=0, **kwargs):
         self.canvas = Manager.canvas
@@ -173,6 +177,8 @@ class SpriteClass(object):
 
         self.default_directory = os.path.dirname(os.path.realpath(__file__))
         self.script_directory = os.path.dirname(os.path.realpath(sys.argv[0]))
+        self.user_images_directory = os.path.realpath(os.path.split(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])[0] + '/Images/')
+
 
         self.sprite_list = glob.glob(self.default_directory+'/sprites/*')
         if kwargs.get('shape') is None:
@@ -279,11 +285,14 @@ class SpriteClass(object):
 
             script_img_path = self.script_directory + "/" + self.filename + ".gif"
             default_img_path = self.default_directory + "/sprites/" + self.filename+".gif"
+            user_img_path = os.path.realpath(self.user_images_directory + "/" + self.filename)
             img_path = None
             if os.path.isfile(script_img_path):
                 img_path = script_img_path
             elif os.path.isfile(default_img_path):
                 img_path = default_img_path
+            elif os.path.isfile(user_img_path):
+                img_path = user_img_path
             else:
                 img_path = self.default_directory + "/sprites/codestersLogo.gif"
 
@@ -908,7 +917,7 @@ class SpriteClass(object):
         self.say_plans.append([text, seconds*50, color, size, font])
 
     def ask(self, text):
-        return raw_input(text+'\n')
+        return input(text+'\n')
 
     def reset_animation(self):
         self.clear_queue()
