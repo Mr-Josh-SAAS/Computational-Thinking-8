@@ -8,5 +8,9 @@
         "**/.*": true,
         "libraries": true,
         "requirements.txt": true
-    }
+    },
+    "cSpell.words": [
+        "codesters",
+        "stage"
+    ]
 }
