@@ -51,15 +51,14 @@ s.event_interval(asteroid_fall, 5)
 # Collision
 
 def collision(s1, s2):
-    # global lives
+    global lives
     print("bonk")
-# #     if s2.get_image_name() == "rock":
-#     lives -= 1
-# # #         lives_display.update(lives)
+    lives -= 1
+    print(lives)
     s.remove_sprite(s2)
-# # #         if lives == 0:
-# # #             global playing
-# # #             playing = False
+    if lives == 0:
+        global playing
+        playing = False
         
 bird.event_collision(collision)
 
