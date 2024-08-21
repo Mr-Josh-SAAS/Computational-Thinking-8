@@ -5,12 +5,10 @@ update readme:
 
 
 ## Unknown
-interval events
-collision
-dodger/collector proof of concept
 flappy bird proof of concept
-fix highlighting on stage, codesters
+fix spellcheck highlighting on stage, codesters
 understand codesters/example.py
+make codesters displays work
 
 
 ## Probably Impossible:
