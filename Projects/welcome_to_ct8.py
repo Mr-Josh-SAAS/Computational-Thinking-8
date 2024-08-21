@@ -1,4 +1,8 @@
-import codesters
+from . import setup 
+
+
+
+
 stage.set_background("fall")
 mySprite = codesters.Sprite("cardinal")
 mySprite.say("Good job finding me!")
