@@ -12,4 +12,4 @@ make codesters displays work
 ## Probably Impossible:
 click events
 animation proof of concept
-sprite.ask
+sprite.ask()
