@@ -1,7 +1,10 @@
 #### Setup ####
 import codesters
-stage.set_background("moon")
-stage.disable_floor()
+from manager import Manager
+s = Manager.stage
+
+s.set_background("moon")
+s.disable_floor()
 bird = codesters.Sprite("cardinal")
 bird.set_size(0.5)
 bird.go_to(0,-200)
@@ -36,28 +39,29 @@ def asteroid_fall():
     global playing, lives
     if playing:
         x_position = random.randint(-250,250)
-        asteroid = codesters.Sprite("rock", x_position, 300)
+        asteroid = codesters.Sprite("rock", x_position, 500)
         # asteroid.set_size(0.4)
         # asteroid.move_down(600)
-        asteroid.set_y_speed(-10)
+        asteroid.set_y_speed(-3)
         # print("test")
-        print(lives)
+        # print(lives)
     
-stage.event_interval(asteroid_fall, 5)
+s.event_interval(asteroid_fall, 5)
 
 # Collision
 
-# def collision(s1, s2):
-#     global lives
+def collision(s1, s2):
+    # global lives
+    print("bonk")
 # #     if s2.get_image_name() == "rock":
 #     lives -= 1
 # # #         lives_display.update(lives)
-# # #         stage.remove_sprite(s2)
+    s.remove_sprite(s2)
 # # #         if lives == 0:
 # # #             global playing
 # # #             playing = False
         
-# bird.event_collision(collision)
+bird.event_collision(collision)
 
 
 
