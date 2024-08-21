@@ -3,15 +3,23 @@ Repository and Codespace required for Computational Thinking 8
 
 
 ## Setting Up This Repository for Yourself:
-1. Create a github account with SAAS email & google sign on
-2. On this page, click the green button that says "Use this template"
-3. Choose "Create a new repository"
-4. You __MUST__ name it __Computational-Thinking-8__
-5. Click "Code" -> "Codespaces" -> Create Codespace on main
+1. Go to [github.com](https://github.com) and click "Sign up" on the top right
+2. Enter your __SAAS Email__ and create a password
+3. Create a username: **pick something school appropriate, you will have to share it with the teacher**
+4. Return to this page and make sure you are logged in
+5. Click the green button that says "Use this template" and choose **"Open in a codespace"**
 6. This will begin to build the codespace for the class
 7. Bookmark the page while you wait for it to build by clicking the star in your browser
 8. When it finishes building, select "welcome_to_ct8" from the file list on the left
 9. Click the triangle in the top right to run the welcome_to_ct8 program and follow the instructions that appear
+
+
+## To Create a Git Branch (must do this before saving your work for the first time):
+1. Click on the "Source Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
+2. Click on the three sideways dots menu on that tab
+3. Choose "Branch" --> "Create Branch"
+4. Type **your name** as the name of the branch
+5. Click the menu again and select "Push", then click "OK"
 
 
 ## To Save Your Work:
