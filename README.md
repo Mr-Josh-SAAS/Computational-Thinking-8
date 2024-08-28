@@ -7,7 +7,7 @@ Repository and Codespace required for Computational Thinking 8
 2. Enter your __SAAS Email__ and create a password
 3. Create a username: **pick something school appropriate, you will have to share it with the teacher**
 4. Return to this page and make sure you are logged in
-5. Click the green button that says "Use this template" and choose **"Open in a codespace"**
+5. Click the green button that says "Code" and choose **"Codespaces" and press the + sign**
 6. This will begin to build the codespace for the class
 7. Bookmark the page while you wait for it to build by clicking the star in your browser
 8. When it finishes building, select "welcome_to_ct8" from the file list on the left
