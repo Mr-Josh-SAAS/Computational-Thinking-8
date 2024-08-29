@@ -15,11 +15,14 @@ Repository and Codespace required for Computational Thinking 8
 
 
 ## To Create a Git Branch (must do this before saving your work for the first time):
-1. Click on the "Source Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
-2. Click on the three sideways dots menu on that tab
-3. Choose "Branch" --> "Create Branch"
-4. Type **your name** as the name of the branch
-5. Click the menu again and select "Push", then click "OK"
+1. Wait until you receive an email from github that *adds you as a collaborator* - click Accept
+2. Go to your bookmarked codespace
+3. Click on the "Source Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
+4. Click on the three sideways dots menu on that tab
+5. Choose "Branch" --> "Create Branch"
+6. Type **your name** as the name of the branch
+7. Click the big green "Publish" button
+8. A small menu will appear at the top of your screen: chose **upstream  :  Mr-Josh-SAAS/Computational-Thinking-8**
 
 
 ## To Save Your Work:
