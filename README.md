@@ -21,8 +21,10 @@ Repository and Codespace required for Computational Thinking 8
 4. Click on the three sideways dots menu on that tab
 5. Choose "Branch" --> "Create Branch"
 6. Type **your name** as the name of the branch
-7. Click the big green "Publish" button
-8. A small menu will appear at the top of your screen: chose **upstream  :  Mr-Josh-SAAS/Computational-Thinking-8**
+7. Type "setup" in the space at the top of the File Browser
+8. Click the + sign next to “Changes”
+9. Click the big green "Publish" button
+10. A small menu will appear at the top of your screen: chose **upstream  :  Mr-Josh-SAAS/Computational-Thinking-8**
 
 
 ## To Save Your Work:
