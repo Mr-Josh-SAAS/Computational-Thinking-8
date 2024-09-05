@@ -5,10 +5,6 @@
         "compounds": []
     },
     "files.exclude": {
-        "**/.*": true,
-        "libraries": true,
-        "requirements.txt": true,
-        "Projects/__pycache__": true,
     },
     "cSpell.words": [
         "codesters",
