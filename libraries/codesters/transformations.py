@@ -78,7 +78,7 @@ def poly_poly(cx, cy, points, rotation):
 
     point_list = []
 
-    for i in range(len(points)/2):
+    for i in range(int(len(points)/2)):
         x = points[i*2] - cx
         y = points[i*2 + 1] - cy
 
