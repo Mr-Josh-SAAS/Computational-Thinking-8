@@ -1,14 +1,4 @@
-###############################################
-### SETUP ###
-import codesters
-from codesters import StageClass
-stage = StageClass()
-###############################################
 
-
-stage.set_background("fall")
-mySprite = codesters.Sprite("cardinal")
-mySprite.say("Good job finding me!")
 
 
 print("Welcome to CT8!")
