@@ -19,7 +19,7 @@ s1 = codesters.Sprite("cardinal", 100, 100)
 s2 = codesters.Sprite("computer", -100, -100)
 s2.set_size(0.5)
 s3 = codesters.Sprite("knitting", 100, -100)
-s3.set_size(0.5)
+s3.set_size(0.51)
 s4 = codesters.Sprite("roof", -100, 100)
 s4.set_size(0.1)
 
