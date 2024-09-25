@@ -5,6 +5,7 @@ if "cat" in q1:
     if "yes" in q2:
         print("That's so cool!") 
 elif "dog" in q1:
+    #this is a comment
     print("You are a dog person")
     q3 = input("What breed of dog is your favorite?")
     if "border collie" in q3:
