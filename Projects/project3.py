@@ -1,3 +1,3 @@
-# line1
-# line2
-# line3
+# Project 3 Example
+print("This is placeholder code")
+print("Not really project 3")
