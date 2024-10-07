@@ -55,5 +55,7 @@ for i in range(6):
     # Result
     print(output)
     if output == "🟩🟩🟩🟩🟩":
-        print(f"You win in {i+1} guesses!")
+        print("You win")
         break
+
+print(f"You used {i+1} guesses")
