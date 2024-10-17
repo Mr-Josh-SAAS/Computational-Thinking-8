@@ -1,6 +1,8 @@
+# Beginning: create variables
 cat_points = 0
 dog_points = 0
 
+# Middle: Ask questions
 # question 1:
 answer = input("On a weekend would you rather A) nap all day, or B) go on a hike to a lake?\n")
 if answer == "A":
@@ -23,7 +25,7 @@ elif answer == "B":
     dog_points += 1
 
 
-# end of quiz:
+# End: determine results
 if cat_points > dog_points:
     print("You are a cat person")
 elif dog_points > cat_points:
