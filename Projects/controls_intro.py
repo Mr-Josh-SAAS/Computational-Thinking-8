@@ -11,19 +11,15 @@ s1.set_size(0.5)
 
 # define controls
 def move_up(sprite):
-    # sprite.set_heading(90)
     sprite.move_up(1)
         
 def move_down(sprite):
-    # sprite.set_heading(270)
     sprite.move_down(1)
     
 def move_left(sprite):
-    # sprite.set_heading(180)
     sprite.move_left(1)
     
 def move_right(sprite):    
-    # sprite.set_heading(0)
     sprite.move_right(1)
 
 
