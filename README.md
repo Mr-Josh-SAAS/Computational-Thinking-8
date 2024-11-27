@@ -1,30 +1,22 @@
 # Computational-Thinking-8
 Repository and Codespace required for Computational Thinking 8
 
+## Welcome to Computational Thinking 8!
+![cardinal](Images/cardinal.png)
 
 ## Setting Up This Repository for Yourself:
+![setup_instructions](Backgrounds/how_to_setup.png)
+
 1. Go to [github.com](https://github.com) and click "Sign up" on the top right
 2. Enter your __SAAS Email__ and create a password
 3. Create a username: **pick something school appropriate, you will have to share it with the teacher**
 4. Return to this page and make sure you are logged in
-5. Click the green button that says "Code" and choose **"Codespaces" and press the + sign**
-6. This will begin to build the codespace for the class
-7. Bookmark the page while you wait for it to build by clicking the star in your browser
-8. When it finishes building, select "welcome_to_ct8" from the file list on the left
-9. Click the triangle in the top right to run the welcome_to_ct8 program and follow the instructions that appear
-
-
-## To Create a Git Branch (must do this before saving your work for the first time):
-1. Wait until you receive an email from github that *adds you as a collaborator* - click Accept
-2. Go to your bookmarked codespace
-3. Click on the "Source Control" tab on the left sidebar (looks like 3 circles with twisty lines connecting them)
-4. Click on the three sideways dots menu on that tab
-5. Choose "Branch" --> "Create Branch"
-6. Type **your name** as the name of the branch
-7. Type "setup" in the space at the top of the File Browser
-8. Click the + sign next to “Changes”
-9. Click the big green "Publish" button
-10. A small menu will appear at the top of your screen: chose **upstream  :  Mr-Josh-SAAS/Computational-Thinking-8**
+5. Click the button that says "main" and choose __your name__ from the dropdown menu
+6. Click the green button that says "Code" and choose **"Codespaces" and press the + sign**
+7. This will begin to build the codespace for the class
+8. Bookmark the page while you wait for it to build by clicking the star in your browser
+9. When it finishes building, select "welcome_to_ct8" from the file list on the left
+10. Click the triangle in the top right to run the welcome_to_ct8 program and follow the instructions that appear
 
 
 ## To Save Your Work:
