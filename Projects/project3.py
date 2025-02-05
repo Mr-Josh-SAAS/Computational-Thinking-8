@@ -4,13 +4,14 @@ t = turtle.Turtle()
 
 t.penup()
 t.goto(-100, -100)
+# here is where i set the color to red
 t.color("red")
 t.pendown()
 
-
-for i in range(3):
+# here is where im drawing the square
+for i in range(300000):
     t.forward(100)
-    t.left(90)
+    t.left(91)
 
 
 
