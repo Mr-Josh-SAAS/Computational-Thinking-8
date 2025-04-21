@@ -1,5 +1,6 @@
 import turtle, time, random
 
+# Section 1 - Helper functions
 def set_background(image_filename):
     screen = turtle.Screen()
     try:
@@ -18,7 +19,7 @@ def create_sprite(image_filename, x=0, y=0):
     return sprite
 
 
-# Section 1 - Variables
+# Section 2 - Variables
 x1 = -200
 y1 = 200
 
@@ -31,7 +32,7 @@ y3 = 0
 x4 = -200
 y4 = -100
 
-# Section 2 - Setup
+# Section 3 - Setup
 set_background("castle")
 t1 = create_sprite("cardinal2",x1,y1)
 t2 = create_sprite("basketball",x2,y2)
@@ -40,7 +41,7 @@ t4 = create_sprite("basketball",x4,y4)
 
 
 
-# Section 3 - Racing
+# Section 4 - Racing
 for i in range(30):
     x1 += 10
     x2 += 15
@@ -53,7 +54,7 @@ for i in range(30):
     t4.goto(x4, y4)
     time.sleep(0.05) 
 
-# Section 4 - Winner
+# Section 5 - Winner
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
     print("player 1 wins!")
 if x2 >= x1 and x2 >= x3 and x2 >= x4:
