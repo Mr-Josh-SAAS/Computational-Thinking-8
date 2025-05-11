@@ -4,12 +4,12 @@ import turtle, time, random
 def set_background(image_filename):
     screen = turtle.Screen()
     try:
-        screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
+        screen.bgpic(f"./Backgrounds/{image_filename}.png")
     except:
-        screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
+        screen.bgpic(f"./Backgrounds/{image_filename}.gif")
 
 def create_sprite(image_filename, x=0, y=0):
-    image_file = f"/workspaces/Computational-Thinking-8/Images/{image_filename}.gif"
+    image_file = f"./Images/{image_filename}.gif"
     screen = turtle.Screen()
     screen.register_shape(image_file)
     sprite = turtle.Turtle()
@@ -30,31 +30,31 @@ y4 = -100
 
 # Section 3 - Setup
 set_background("castle")
-t1 = create_sprite("cardinal2",x1,y1)
-t2 = create_sprite("basketball",x2,y2)
-t3 = create_sprite("basketball",x3,y3)
-t4 = create_sprite("basketball",x4,y4)
+t1 = create_sprite("basketball",x1,y1)
+t2 = create_sprite("fish",x2,y2)
+t3 = create_sprite("cardinal2",x3,y3)
+t4 = create_sprite("sodacan",x4,y4)
 
 # Section 4 - Racing
 for i in range(30):
-    x1 += 10
-    x2 += 15
-    x3 += 10
-    x4 += random.randint(1,50)
+    x1 += 8
+    x2 += 11
+    x3 += random.randint(10,16)
+    x4 += random.randint(0,20)
 
     t1.goto(x1, y1)
     t2.goto(x2, y2)
     t3.goto(x3, y3)
     t4.goto(x4, y4)
-    time.sleep(0.05) 
+    time.sleep(0.1) 
 
 # Section 5 - Winner
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
-    print("player 1 wins!")
+    print("basketball wins!")
 if x2 >= x1 and x2 >= x3 and x2 >= x4:
     print("player 2 wins!")
 if x3 >= x1 and x3 >= x2 and x3 >= x4:
-    print("player 3 wins!")
+    print("cardinal wins!")
 if x4 >= x1 and x4 >= x2 and x4 >= x3:
     print("player 4 wins!")
 
