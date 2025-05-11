@@ -4,19 +4,25 @@ import turtle, math, time
 def set_background(image_filename):
     screen = turtle.Screen()
     try:
-        screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
+        screen.bgpic(f"./Backgrounds/{image_filename}.png")
     except:
-        screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
+        screen.bgpic(f"./Backgrounds/{image_filename}.gif")
 
-def create_sprite(image_filename, x=0, y=0):
-    image_file = f"/workspaces/Computational-Thinking-8/Images/{image_filename}.gif"
+def set_image(sprite, image_filename):
+    image_file = f"./Images/{image_filename}.gif"
     screen = turtle.Screen()
     screen.register_shape(image_file)
-    sprite = turtle.Turtle()
     sprite.shape(image_file)
+
+def create_sprite(image_filename, x=0, y=0):
+    sprite = turtle.Turtle()
+    set_image(sprite, image_filename)
     sprite.penup()
     sprite.goto(x,y)
     return sprite
+
+
+
 
 def get_distance(t1, t2):
     dx = t1.xcor() - t2.xcor()
@@ -34,8 +40,10 @@ t2 = create_sprite("basketball",100,0)
 
 # Section 3 - controls
 def move_up_1():
+    set_image(t1, "bat")
     t1.goto(t1.xcor(), t1.ycor() + 10)
 def move_down_1():
+    set_image(t1, "cardinal2")
     t1.goto(t1.xcor(), t1.ycor() - 10)
 def move_left_1():
     t1.goto(t1.xcor() - 10, t1.ycor())
@@ -56,10 +64,6 @@ def move_left_2():
 def move_right_2():
     t2.goto(t2.xcor() + 10, t2.ycor())
 
-window.onkeypress(move_up_1, "w")
-window.onkeypress(move_left_1, "a")
-window.onkeypress(move_down_1, "s")
-window.onkeypress(move_right_1, "d")
 
 window.onkeypress(move_up_2, "Up")
 window.onkeypress(move_left_2, "Left")
@@ -84,6 +88,7 @@ while True:
         t2.goto(100,0)
         t1.showturtle()
         t2.showturtle()
+        tagged = False
 
 
 
