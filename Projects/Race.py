@@ -40,7 +40,7 @@ t4 = create_sprite("kitten",x4,y4)
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
 # # TODO - explain here which sprites are faster or slower
 
-## They are all the the same speed so they would all have an equal chance of winning
+########They are all the the same speed so they would all have an equal chance of winning
 for i in range(3,30):
     x1 += random.randint (1,20)
     x2 += random.randint (1,20)
