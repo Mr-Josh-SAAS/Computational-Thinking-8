@@ -31,6 +31,6 @@
 	// "remoteUser": "root"
 	"containerEnv": { 
 		"HOME_CT": "/workspaces/Computational-Thinking-8",
-		"PYTHONPATH": "/workspaces/Computational-Thinking-8/libraries/codesters"
+		"PYTHONPATH": "/workspaces/Computational-Thinking-8/"
 	}
 }
