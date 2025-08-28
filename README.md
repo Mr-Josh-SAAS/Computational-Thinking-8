@@ -1,12 +1,11 @@
 # Computational-Thinking-8
 Repository and Codespace required for Computational Thinking 8
+Fall 2025
 
 ## Welcome to Computational Thinking 8!
-![cardinal](Images/cardinal.png)
+![cardinal](Images/cardinal.gif)
 
 ## Setting Up This Repository for Yourself:
-![setup_instructions](Backgrounds/how_to_setup.png)
-
 1. Go to [github.com](https://github.com) and click "Sign up" on the top right
 2. Enter your __SAAS Email__ and create a password
 3. Create a username: **pick something school appropriate, you will have to share it with the teacher**
