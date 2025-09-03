@@ -1,0 +1,27 @@
+print("EXAMPLE 1")
+name = input("What is your name? ")
+print(f"Hello {name} and welcome to CT8")
+print("Today we will tell a story with your help")
+print("")
+print("")
+animal = input("Pick an animal: ")
+location = input("Now pick a location: ")
+print("~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~")
+print(f"One day, a {animal} wandered into {location}...")
+print("~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~*~~~")
+
+
+
+
+input("")
+print("EXAMPLE 2")
+print("YOU ARE NOW CHATTING WITH CHARLIE CHATBOT 2.0")
+print("  >>- Hi there, I'm Charlie!")
+print("  >>- What is your name? ")
+name = input("")
+print(f"  >>- It's great to meet you {name}, how do you feel today?")
+emotion = input("")
+print(f"  >>- Wow {name}... I also feel {emotion}!")
+print(f"  >>- Maybe we can talk about school?")
+print(f"  >>- ...")
+print(f"  >>- What is your favorite subject at school?")
