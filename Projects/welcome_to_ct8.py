@@ -21,10 +21,10 @@ print(r" \_____\____/|_|  |_|_|         |_|  |_|  |_|_____|_| \_|_|\_\_____|_| \
 # text art from https://patorjk.com/software/taag/
 
 
-print(f"This codespace belongs to {name}")
+print(f"This codespace belongs to ")
 print("\n\n")
                                                                                           
                                                                                           
                                   
 print("Now it's your turn:")
-print("Find this line (line 30) in the welcome_to_ct8.py file, then change the message to say a fact about you.")                                  
+print("I don't like celery:")
