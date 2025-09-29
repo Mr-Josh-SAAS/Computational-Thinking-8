@@ -8,16 +8,22 @@ def set_background(image_filename):
     except:
         screen.bgpic(f"./Backgrounds/{image_filename}.gif")
 
-def create_sprite(image_filename, x=0, y=0):
+		
+def set_image(sprite, image_filename):
     image_file = f"./Images/{image_filename}.gif"
     screen = turtle.Screen()
     screen.register_shape(image_file)
-    sprite = turtle.Turtle()
     sprite.shape(image_file)
+
+def create_sprite(image_filename, x=0, y=0):
+    sprite = turtle.Turtle()
+    set_image(sprite, image_filename)
     sprite.penup()
     sprite.goto(x,y)
+    window.update()
     return sprite
-
+window = turtle.Screen()
+window.tracer(0)
 # Section 2 - Variables
 x1 = -200
 y1 = 200

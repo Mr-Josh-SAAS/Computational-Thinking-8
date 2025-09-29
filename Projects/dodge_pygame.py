@@ -18,6 +18,7 @@ def create_sprite(image_filename, x=0, y=0):
     set_image(sprite, image_filename)
     sprite.penup()
     sprite.goto(x,y)
+    window.update()
     return sprite
 
 def get_distance(s1, s2):

@@ -6,14 +6,18 @@ def set_background(image_filename):
         screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
     except:
         screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
-def create_sprite(image_filename, x=0, y=0):
-    image_file = f"/workspaces/Computational-Thinking-8/Images/{image_filename}.gif"
+def set_image(sprite, image_filename):
+    image_file = f"./Images/{image_filename}.gif"
     screen = turtle.Screen()
     screen.register_shape(image_file)
-    sprite = turtle.Turtle()
     sprite.shape(image_file)
+
+def create_sprite(image_filename, x=0, y=0):
+    sprite = turtle.Turtle()
+    set_image(sprite, image_filename)
     sprite.penup()
     sprite.goto(x,y)
+    window.update()
     return sprite
 
 window = turtle.Screen()

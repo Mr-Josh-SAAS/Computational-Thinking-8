@@ -7,7 +7,6 @@ def set_background(image_filename):
         screen.bgpic(f"./Backgrounds/{image_filename}.png")
     except:
         screen.bgpic(f"./Backgrounds/{image_filename}.gif")
-
 def set_image(sprite, image_filename):
     image_file = f"./Images/{image_filename}.gif"
     screen = turtle.Screen()
@@ -19,7 +18,11 @@ def create_sprite(image_filename, x=0, y=0):
     set_image(sprite, image_filename)
     sprite.penup()
     sprite.goto(x,y)
+    window.update()
     return sprite
+
+window = turtle.Screen()
+window.tracer(0)
 
 
 
@@ -34,7 +37,7 @@ window.tracer(0)
 
 # Section 2 - setup
 set_background("castle")
-t1 = create_sprite("cardinal2",-100,0)
+t1 = create_sprite("cardinal",-100,0)
 t2 = create_sprite("basketball",100,0)
 
 
