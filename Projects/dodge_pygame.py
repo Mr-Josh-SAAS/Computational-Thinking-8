@@ -65,6 +65,7 @@ while True:
     time.sleep(0.1)
     timer += 1  
 
+    # Code for automatic actions
     if timer % 10 == 0:
         y_position = random.randint(-250, 250)
         s2 = create_sprite("basketball",300,y_position)
@@ -81,7 +82,8 @@ while True:
 
     window.update()
 
-    if lives <= 0:
-        break
+    # code for how the game ends
+    # if __________________:
+    #     break
 
 print("Game Over")

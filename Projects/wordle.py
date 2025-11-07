@@ -1,11 +1,11 @@
 import random
 
 # Pick a word at random
-word_list = ["loopy","heart","audio","laugh","trial"]
+# word_list = ["loopy","heart","audio","laugh","trial","mason","leyah",
+#              "Flynn","alana","fdsaj"]
+word_list = ["lorpy"]
 hidden_word = random.choice(word_list)
-
 print("WORDLE:")
-
 # Repeat for 6 guesses
 for i in range(6):
     # Guess a word
@@ -19,8 +19,8 @@ for i in range(6):
         output += "🟨"
     else:
         output += "⬛"
-    
-    # Second Letter
+
+    # check the second letter
     if guess_word[1] == hidden_word[1]:
         output += "🟩"
     elif guess_word[1] in hidden_word:
@@ -28,23 +28,23 @@ for i in range(6):
     else:
         output += "⬛"
 
-    # Third Letter
+    #third letter
     if guess_word[2] == hidden_word[2]:
         output += "🟩"
     elif guess_word[2] in hidden_word:
         output += "🟨"
     else:
         output += "⬛"
-        
-    # Fourth Letter
+
+    #letter number 4
     if guess_word[3] == hidden_word[3]:
         output += "🟩"
     elif guess_word[3] in hidden_word:
         output += "🟨"
     else:
         output += "⬛"
-        
-    # Fifth Letter
+
+    # fifth letter
     if guess_word[4] == hidden_word[4]:
         output += "🟩"
     elif guess_word[4] in hidden_word:

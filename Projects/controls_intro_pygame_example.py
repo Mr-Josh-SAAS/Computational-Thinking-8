@@ -61,5 +61,5 @@ window.onkeyrelease(show, "h")
 # Section 5: game loop
 window.listen()
 while True:
-    time.sleep(0.01)
+    time.sleep(0.1)
     window.update()
