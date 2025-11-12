@@ -65,15 +65,18 @@ while True:
     time.sleep(0.1)
     timer += 1  
 
-    # Code for automatic actions
+    # Automatically create basketballs every 1 seconds
     if timer % 10 == 0:
         y_position = random.randint(-250, 250)
         s2 = create_sprite("basketball",300,y_position)
         s2.setheading(180)
         obstacles.append(s2)
         
+    # Move each basketball
     for s2 in obstacles: 
         s2.forward(10)
+
+        # if you collide, lose a life
         if get_distance(s1,s2) < 50:
             lives -= 1
             s2.hideturtle()
@@ -82,8 +85,8 @@ while True:
 
     window.update()
 
-    # code for how the game ends
-    # if __________________:
-    #     break
+    # end the game if 0 lives
+    if lives == 0:
+        break
 
-print("Game Over")
+print(f"Game Over - your score was {timer}")
