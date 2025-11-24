@@ -9,7 +9,7 @@
         "libraries": true,
         "requirements.txt": true,
         "Projects/__pycache__": true,
-        "Projects/utils.py": true,
+        "utils.py": true,
     },
     "cSpell.words": [
         "codesters",
