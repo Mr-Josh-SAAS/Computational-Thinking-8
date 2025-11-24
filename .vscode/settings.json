@@ -10,10 +10,11 @@
         "requirements.txt": true,
         "Projects/__pycache__": true,
         "utils.py": true,
+        "README.md": true,
     },
-    "cSpell.words": [
-        "codesters",
-        "stage"
+    "git.confirmEmptyCommits": false,
+    "Lua.spell.dict": [
+        "exitonclick"
     ],
     "cSpell.customDictionaries": {
         "custom-dictionary-workspace": {
@@ -36,5 +37,5 @@
     "chat.editRequests": "none",
     "chat.implicitContext.suggestedContext": false,
     "chat.sendElementsToChat.enabled": false,
-    "chat.useCloudButtonV2": false
+    "chat.useCloudButtonV2": false,
 }
