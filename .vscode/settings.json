@@ -22,5 +22,6 @@
             "addWords": true,
             "scope": "workspace"
         }
-    }
+    },
+    "git.useEditorAsCommitInput": false
 }
