@@ -23,5 +23,18 @@
             "scope": "workspace"
         }
     },
-    "git.useEditorAsCommitInput": false
+    "git.useEditorAsCommitInput": false,
+    "workbench.commandPalette.showAskInChat": false,
+    "chat.agent.enabled": false,
+    "chat.agent.thinking.collapsedTools": "none",
+    "chat.agentSessionsViewLocation": "disabled",
+    "chat.allowAnonymousAccess": false,
+    "chat.checkpoints.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "chat.detectParticipant.enabled": false,
+    "chat.disableAIFeatures": true,
+    "chat.editRequests": "none",
+    "chat.implicitContext.suggestedContext": false,
+    "chat.sendElementsToChat.enabled": false,
+    "chat.useCloudButtonV2": false
 }
