@@ -6,7 +6,7 @@ set_background("underwater")
 fish_sprite = create_sprite("fish",-200,-200)
 fish_direction = "right"
 
-message_sprite = create_sprite("alien",-260,180)
+message_sprite = create_sprite("alien",-260,140)
 message_sprite.hideturtle()
 
 apples = []

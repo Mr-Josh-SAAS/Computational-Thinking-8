@@ -4,7 +4,7 @@ from utils import *
 # Section 1 - setup
 set_background("saas")
 
-message_sprite = create_sprite("alien",-350,180)
+message_sprite = create_sprite("alien",-350,140)
 message_sprite.hideturtle()
 
 cardinals = 0
