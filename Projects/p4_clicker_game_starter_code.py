@@ -7,6 +7,10 @@ from utils import *
 # TODO - create at least two variables and set their starting value. ex: cookies = 0
 
 
+# OPTIONAL: use this invisible alien to say a message
+# message_sprite = create_sprite("alien", -200,200)
+# message_sprite.hideturtle()
+
 
 
 # Section 2 - controls
@@ -24,7 +28,12 @@ from utils import *
 window.listen()
 for i in range(1000000000):
     
-    # TODO - put any repeating actions here
+    # TODO - put any automatic actions here
+
+
+    # OPTIONAL - use the message sprite to say a message
+    # message_sprite.clear()
+    # message_sprite.write("Hello")
 
     time.sleep(0.01)
     window.update()
