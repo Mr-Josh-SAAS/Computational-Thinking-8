@@ -4,17 +4,17 @@ from utils import *
 # Section 1 - setup
 set_background("saas")
 
-message_sprite = create_sprite("alien",-260,220)
+message_sprite = create_sprite("alien",-350,180)
 message_sprite.hideturtle()
 
 cardinals = 0
 computers = 0
-cost = 1000
+cost = 10
 
 # Section 2 - controls
 def get_cardinal():
     global cardinals
-    cardinals += 100
+    cardinals += 1
     x = random.randint(-200,200)
     y = random.randint(-200,200)
     create_sprite("cardinal3",x,y)
@@ -37,10 +37,10 @@ window.onkeypress(get_computer, "c")
 window.listen()
 for i in range(1000000000):
     message_sprite.clear() 
-    message_sprite.write(f"Cardinals: {cardinals}\nComputers: {computers}",font=("Arial",30,"normal"))
+    message_sprite.write(f"Cardinals: {cardinals}\nCost: {cost}\nComputers: {computers}",font=("Arial",30,"normal"))
 
-
-    cardinals += 1*computers
+    if i % 100 == 0:
+        cardinals += 1*computers
 
     time.sleep(0.01)
     window.update()
