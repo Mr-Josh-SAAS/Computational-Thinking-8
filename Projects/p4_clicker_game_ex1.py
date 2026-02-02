@@ -19,18 +19,18 @@ def get_cardinal():
     y = random.randint(-200,200)
     create_sprite("cardinal3",x,y)
 
+window.onkeypress(get_cardinal, "space")
 
 def get_computer():
     global cardinals, computers, cost
     if cardinals >= cost:
-        cost = cost * 2
         computers += 1
+        cost = cost * 2
         x = -400 + 120*computers
         y = -250
         create_sprite("computer2",x,y)
 
 
-window.onkeypress(get_cardinal, "space")
 window.onkeypress(get_computer, "c")
 
 # Section 3 - game loop
