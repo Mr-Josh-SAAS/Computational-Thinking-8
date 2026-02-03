@@ -1,11 +1,8 @@
 import time, turtle, random
 from utils import *
-
 # Section 1: Setup
 set_background("castle")
 s1 = create_sprite("character1",0,-200)
-
-
 
 # Section 2: define controls
 def move_up():
@@ -32,7 +29,6 @@ window.onkeypress(move_up, "Up")
 window.onkeypress(move_down, "Down")
 
 # Section 3: define other controls
-# hide and show controls
 def hide():
     s1.hideturtle()
 def show():
