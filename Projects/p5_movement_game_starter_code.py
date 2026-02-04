@@ -1,13 +1,10 @@
-import turtle
-import math
-import time
-import random
+import turtle, math, time, random
 from utils import *
 
 # Section 1: Setup
-# TODO - create your player character
+# TODO - create your player character and any other sprites
 # TODO - set your background
-# TODO - set the starting value for your variable
+# TODO - set the starting value for your variables
 sprite_list = []
 
 # Section 2: Controls
