@@ -40,6 +40,6 @@ window.onkeyrelease(show, "h")
 
 # Section 4: game loop
 window.listen()
-while True:
-    time.sleep(0.1)
+for i in range(1000000000):
+    time.sleep(0.01)
     window.update()

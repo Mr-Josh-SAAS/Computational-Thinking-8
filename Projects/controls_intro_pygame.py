@@ -92,6 +92,6 @@ window.onkeypress(green_pen, "p")
 
 # Section 6: game loop
 window.listen()
-while True:
+for i in range(1000000000):
     time.sleep(0.01)
     window.update()
