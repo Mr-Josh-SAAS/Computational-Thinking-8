@@ -3,42 +3,36 @@ from utils import *
 
 # Section 1: Setup
 # TODO - create your player character and any other sprites
-spotlight = create_sprite("circle", 0, 0)
-player = create_sprite("character2", 0, 0)
-
-message_sprite = create_sprite("alien",-300,200)
-message_sprite.color("red")
-message_sprite.hideturtle()
+mario = create_sprite("mario", 0, -200)
 
 # TODO - set your background
-set_background("black")
+set_background("moon")
 
 # TODO - set the starting value for your variables
-time_alive = 0
+lives = 5
 sprite_list = []
 
 # Section 2: Controls
 # TODO - define your controls
 def move_up():
-    x = player.xcor()
-    y = player.ycor() + 10
-    player.goto(x, y)
+    x = mario.xcor()
+    y = mario.ycor() + 10
+    mario.goto(x, y)
 
 def move_down():
-    x = player.xcor()
-    y = player.ycor() - 10
-    player.goto(x, y)
+    x = mario.xcor()
+    y = mario.ycor() - 10
+    mario.goto(x, y)
 
 def move_left():
-    x = player.xcor() - 10
-    y = player.ycor()
-    player.goto(x, y)
+    x = mario.xcor() - 10
+    y = mario.ycor()
+    mario.goto(x, y)
 
 def move_right():
-    x = player.xcor() + 10
-    y = player.ycor()
-    player.goto(x, y)
-
+    x = mario.xcor() + 10
+    y = mario.ycor()
+    mario.goto(x, y)
 
 # TODO - pick keys for each control
 window.onkeypress(move_up, "Up")
@@ -51,20 +45,34 @@ window.listen()
 for i in range(10000000000):
 
     # TODO - add code for automatic actions
-    # increase time alive once every 100 loops (once a second)
-    if i % 100 == 0:
-        time_alive += 1
 
-    # move the spotlight randomly every loop
-    turn_degrees = random.randint(-15,15)
-    spotlight.left(turn_degrees)
-    spotlight.forward(1)
-            
+    # every 0.5 seconds (50 loops), create a falling obstacle
+    if i % 50 == 0:
+        my_image = random.choice(["sodacan","pineapple","milkjug","ingot"])
+        x = random.randint(-300,300)
+        obstacle = create_sprite(my_image, x, 400)
+        obstacle.setheading(270)
+        sprite_list.append(obstacle)
     
+
+    # move each obstacle downward a little
+    # if they get too close to mario, lose a life
+    for obstacle in sprite_list:
+        obstacle.forward(5)
+        if get_distance(mario, obstacle) < 100:
+            lives -= 1
+
+            # also hide the obstacle and remove it
+            obstacle.hideturtle()
+            sprite_list.remove(obstacle)
+
+
+
 	# TODO - make an if statement for ending the game
-	# if you get far from the center of the spotlight, end the game
-    if get_distance(player, spotlight) > 150:
-        message_sprite.write(f"I survived for {time_alive} seconds", font=("Arial",40,"normal"))
+    # if out of lives, end the game
+    if lives <= 0:
+        mario.color("purple")
+        mario.write("Oh no!", font=("Arial", 30, "normal"))
         window.update()
         time.sleep(5)
         break
