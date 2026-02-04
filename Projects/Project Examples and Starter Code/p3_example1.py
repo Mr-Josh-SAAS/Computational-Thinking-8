@@ -1,6 +1,11 @@
 import turtle, time, random
 from utils import *
 
+##########################################
+# Project 3 Example
+# Turtle Race
+##########################################
+
 # Section 1 - Variables
 x1 = -200
 y1 = 200

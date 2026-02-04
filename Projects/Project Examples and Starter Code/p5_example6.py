@@ -1,6 +1,11 @@
 import turtle, math, time, random
 from utils import *
 
+##########################################
+# Project 5 Example 6
+# Flappy Bird
+##########################################
+
 # Section 1: Setup
 # TODO - create your player character and any other sprites
 player = create_sprite("bald_eagle", -200, 0)

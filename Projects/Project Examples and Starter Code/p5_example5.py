@@ -1,6 +1,11 @@
 import turtle, math, time, random
 from utils import *
 
+##########################################
+# Project 5 Example 5
+# Explore a Town
+##########################################
+
 # Section 1: Setup
 # TODO - create your player character and any other sprites
 town = create_sprite("town_map", 0, 0)

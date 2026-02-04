@@ -1,6 +1,11 @@
 import turtle, math, time, random
 from utils import *
 
+##########################################
+# Project 5 Example 2
+# Dodge Game
+##########################################
+
 # Section 1: Setup
 # TODO - create your player character and any other sprites
 mario = create_sprite("mario", 0, -200)

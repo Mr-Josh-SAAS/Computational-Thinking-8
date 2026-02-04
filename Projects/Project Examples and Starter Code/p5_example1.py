@@ -1,6 +1,11 @@
 import turtle, math, time, random
 from utils import *
 
+##########################################
+# Project 5 Example 1
+# Tag Game
+##########################################
+
 # Section 1: Setup
 # TODO - create your player character and any other sprites
 s1 = create_sprite("cardinal2", -200, 0)

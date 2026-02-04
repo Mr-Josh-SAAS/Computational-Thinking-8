@@ -1,6 +1,11 @@
 import turtle, time, random
 from utils import *
 
+##########################################
+# Project 4 Example 3
+# Rocket Build Game
+##########################################
+
 # Section 1 - setup
 set_background("moon")
 

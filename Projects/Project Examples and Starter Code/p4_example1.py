@@ -1,6 +1,11 @@
 import turtle, time, random
 from utils import *
 
+##########################################
+# Project 4 Example 1
+# Cardinal Clicker game
+##########################################
+
 # Section 1 - setup
 set_background("saas")
 

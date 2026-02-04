@@ -1,6 +1,11 @@
 import turtle, math, time, random
 from utils import *
 
+##########################################
+# Project 5 Example 4
+# Draw without Looking
+##########################################
+
 # Section 1: Setup
 # TODO - create your player character and any other sprites
 player = create_sprite("turtle3", -150, 0)

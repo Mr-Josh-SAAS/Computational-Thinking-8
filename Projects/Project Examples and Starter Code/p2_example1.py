@@ -1,3 +1,8 @@
+##########################################
+# Project 2 Example
+# Personality Quiz
+##########################################
+
 winter_points = 0
 summer_points = 0
 spring_points = 0

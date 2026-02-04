@@ -1,6 +1,11 @@
 import turtle, time, random
 from utils import *
 
+##########################################
+# Project 4 Example 2
+# Take care of a pet fish game
+##########################################
+
 # Section 1 - setup
 set_background("underwater")
 fish_sprite = create_sprite("fish",-200,-200)

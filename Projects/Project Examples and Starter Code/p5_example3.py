@@ -1,6 +1,11 @@
 import turtle, math, time, random
 from utils import *
 
+##########################################
+# Project 5 Example 3
+# Stay in the Circle
+##########################################
+
 # Section 1: Setup
 # TODO - create your player character and any other sprites
 spotlight = create_sprite("circle", 0, 0)
