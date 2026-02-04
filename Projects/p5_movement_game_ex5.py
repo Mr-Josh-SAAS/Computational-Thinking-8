@@ -139,6 +139,7 @@ for i in range(10000000000):
     
     
 	# TODO - make an if statement for ending the game
+    # if found all 4 items, win
     if items_found >= 4:
         player.clear()
         player.color("red")
