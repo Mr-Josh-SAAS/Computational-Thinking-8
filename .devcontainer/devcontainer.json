@@ -3,7 +3,7 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:2-3.13-trixie"
+	"image": "mcr.microsoft.com/devcontainers/python:2-3.13-trixie",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {
 		// "ghcr.io/devcontainers-extra/features/pylint": {},
@@ -29,8 +29,8 @@
 	// },
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
-	// "containerEnv": { 
-	// 	"HOME_CT": "/workspaces/Computational-Thinking-8",
-	// 	"PYTHONPATH": "/workspaces/Computational-Thinking-8/"
-	// }
+	"containerEnv": { 
+		"HOME_CT": "/workspaces/Computational-Thinking-8",
+		"PYTHONPATH": "/workspaces/Computational-Thinking-8/"
+	}
 }
