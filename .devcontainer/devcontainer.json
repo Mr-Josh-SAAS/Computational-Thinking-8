@@ -18,7 +18,7 @@
       "label": "desktop"
     }
   },
-  "postCreateCommand": "./.devcontainer/postCreateCommands.sh",
+  "postCreateCommand": "bash ./.devcontainer/postCreateCommands.sh",
   "customizations": {
 		"vscode": {
 			"extensions": [
