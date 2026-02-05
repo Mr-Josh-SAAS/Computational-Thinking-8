@@ -22,6 +22,7 @@
   "customizations": {
 		"vscode": {
 			"extensions": [
+        "ms-python.debugpy",
 				"streetsidesoftware.code-spell-checker"
 			]
 		}
