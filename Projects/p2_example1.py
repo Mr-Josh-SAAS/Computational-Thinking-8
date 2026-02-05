@@ -32,3 +32,10 @@ elif answer3 == "C":
 	spring_points += 1
 
 print(f"You score is {winter_points} winter, {summer_points} summer, and {spring_points} spring")
+
+if winter_points >= summer_points and winter_points >= spring_points:
+	print("You are a winter person. You like cozy outfits and snow.")
+elif summer_points >= winter_points and summer_points >= spring_points:
+	print("You are a summer person. You like the beach and time off from school.")
+if spring_points >= summer_points and spring_points >= winter_points:
+	print("You are a spring person. You like rain, flowers, and probably like Seattle.")
