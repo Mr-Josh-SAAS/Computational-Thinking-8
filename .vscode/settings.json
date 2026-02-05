@@ -5,12 +5,12 @@
         "compounds": []
     },
     "files.exclude": {
-        "**/.*": true,
-        "libraries": true,
-        "requirements.txt": true,
-        "Projects/__pycache__": true,
-        "utils.py": true,
-        "README.md": true,
+        // "**/.*": true,
+        // "libraries": true,
+        // "requirements.txt": true,
+        // "Projects/__pycache__": true,
+        // "utils.py": true,
+        // "README.md": true,
     },
     "git.confirmEmptyCommits": false,
     "Lua.spell.dict": [
