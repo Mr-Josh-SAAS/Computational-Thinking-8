@@ -146,6 +146,8 @@ for i in range(10000000000):
 	# TODO - make an if statement for ending the game
     # if found all 4 items, win
     if items_found >= 4:
+        message_sprite.clear()
+        message_sprite.write(f"Items: {items_found}", font=("Arial", 40, "normal"))
         player.clear()
         player.color("red")
         player.write(f"I found all the items!", font=("Arial",20,"normal"))
