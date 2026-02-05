@@ -18,7 +18,7 @@
       "label": "desktop"
     }
   },
-  // "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "postCreateCommand": "./.devcontainer/postCreateCommands.sh",
   "customizations": {
 		"vscode": {
 			"extensions": [
