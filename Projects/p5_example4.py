@@ -93,7 +93,7 @@ for i in range(10000000000):
     # TODO - add code for automatic actions
 
     # if still drawing keep creating curtains over the image, add them to the sprite_list
-    if still_drawing == True:
+    if still_drawing == True and i % 10 == 0:
         c1 = create_sprite("curtain",0,0)
         sprite_list.append(c1)
     
