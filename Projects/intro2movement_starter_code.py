@@ -2,26 +2,26 @@ import time, turtle, random
 from utils import *
 # Section 1: Setup
 set_background("castle")
-s1 = create_sprite("character1",0,-200)
+s1 = create_sprite("cardinal2",0,-200)
 
 # Section 2: define controls
 def move_up():
     x = s1.xcor()
-    y = s1.ycor() + 10
+    y = s1.ycor() + 2
     s1.goto(x,y)
         
 def move_down():
     x = s1.xcor()
-    y = s1.ycor() - 10
+    y = s1.ycor() - 2
     s1.goto(x,y)
     
 def move_left():
-    x = s1.xcor() - 10
+    x = s1.xcor() - 2
     y = s1.ycor() 
     s1.goto(x,y)
     
 def move_right(): 
-    x = s1.xcor() + 10
+    x = s1.xcor() + 2
     y = s1.ycor() 
     s1.goto(x,y)
 
