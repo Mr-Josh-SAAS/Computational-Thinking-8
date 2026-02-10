@@ -111,8 +111,8 @@ for i in range(10000000000):
             
     
 	# TODO - make an if statement for ending the game
-	# end if longer than 60 seconds 
-    if i > 100*60:
+	# end if longer than 30 seconds 
+    if i > 100*30:
         break
 
     time.sleep(0.01)
