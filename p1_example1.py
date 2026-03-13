@@ -4,7 +4,7 @@
 ##########################################
 
 
-print("EXAMPLE 1   ")
+print("EXAMPLE 1   " )
 name = input("What is your name? ")
 print(f"Hello {name} and welcome to CT8")
 print("Today we will tell a story with your help")
