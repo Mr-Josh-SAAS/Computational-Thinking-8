@@ -27,12 +27,12 @@ s2.clear()
 window.update()
 time.sleep(1)
 
-s1.write(f"I'm looking for a lost fish named {player_name}",font = ("Arial", 20, "normal"))
+s1.write(f"I'm looking for {player_name}",font = ("Arial", 20, "normal"))
 window.update()
 time.sleep(1)
 
 s1.clear()
-s1.write("Have you seen one?",font = ("Arial", 20, "normal"))
+s1.write("Have you seen them?",font = ("Arial", 20, "normal"))
 window.update()
 time.sleep(1)
 
