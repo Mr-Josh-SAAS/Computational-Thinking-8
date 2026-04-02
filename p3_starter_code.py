@@ -1,4 +1,3 @@
-import turtle, time, random
 from utils import *
 
 # Section 1 - Variables
@@ -43,10 +42,11 @@ t4 = create_sprite("turtle2",x4,y4)
 # # Section 4 - Winner
 # # TODO - complete the elif for player 2 winning
 # # TODO - write another elif for player 3 and player 4
+# s5 = create_sprite("alien",-200,-200)
 # if x1 >= x2 and x1 >= x3 and x1 >= x4:
-#     print("player 1 wins!")
+#     s5.write("Player 1 wins!")
 # elif
-#     print("player 2 wins!")
+#     s5.write("player 2 wins!")
 
 
 turtle.exitonclick()

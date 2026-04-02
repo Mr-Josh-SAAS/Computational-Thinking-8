@@ -1,4 +1,3 @@
-import turtle, time, random
 from utils import *
 
 ##########################################
@@ -40,13 +39,15 @@ for i in range(30):
 
 
 # Section 4 - Winner
+s5 = create_sprite("alien",-200,-200)
+s5.color("white")
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
-    print("basketball wins!")
+    s5.write("basketball wins!",font = ("Arial", 20, "normal"))
 if x2 >= x1 and x2 >= x3 and x2 >= x4:
-    print("player 2 wins!")
+    s5.write("player 2 wins!",font = ("Arial", 20, "normal"))
 if x3 >= x1 and x3 >= x2 and x3 >= x4:
-    print("cardinal wins!")
+    s5.write("cardinal wins!",font = ("Arial", 20, "normal"))
 if x4 >= x1 and x4 >= x2 and x4 >= x3:
-    print("player 4 wins!")
+    s5.write("player 4 wins!",font = ("Arial", 20, "normal"))
 
 turtle.exitonclick()
