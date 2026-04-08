@@ -22,7 +22,8 @@ t4 = create_sprite("turtle2",x4,y4)
 
 
 # # Section 3 - Racing
-# # TODO - set how much each variable changes by and increase the number of repeats to at least 30
+# # TODO - increase the number of repeats to at least 30
+# # TODO - set how much each variable changes by 
 # # TODO - explain here which sprites are faster or slower
 # for i in range(3):
 #     x1 +=
