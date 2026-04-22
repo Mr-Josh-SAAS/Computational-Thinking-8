@@ -1,4 +1,3 @@
-import turtle, time, random
 from utils import *
 
 # Section 1 - setup
@@ -8,8 +7,8 @@ from utils import *
 
 
 # OPTIONAL: use this invisible alien to say a message
-# message_sprite = create_sprite("alien", -200,200)
-# message_sprite.hideturtle()
+m1 = create_sprite("alien", -200,200)
+m1.hideturtle()
 
 
 
@@ -32,8 +31,8 @@ for i in range(1000000000):
 
 
     # OPTIONAL - use the message sprite to say a message
-    # message_sprite.clear()
-    # message_sprite.write("Hello")
+    # m1.clear()
+    # m1.write("Hello")
 
     time.sleep(0.01)
     window.update()

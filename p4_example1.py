@@ -9,8 +9,8 @@ from utils import *
 # Section 1 - setup
 set_background("saas")
 
-message_sprite = create_sprite("alien",-350,140)
-message_sprite.hideturtle()
+m1 = create_sprite("alien",-350,140)
+m1.hideturtle()
 
 cardinals = 0
 computers = 0
@@ -41,8 +41,8 @@ window.onkeypress(get_computer, "c")
 # Section 3 - game loop
 window.listen()
 for i in range(1000000000):
-    message_sprite.clear() 
-    message_sprite.write(f"Cardinals: {cardinals}\nCost: {cost}\nComputers: {computers}",font=("Arial",30,"normal"))
+    m1.clear() 
+    m1.write(f"Cardinals: {cardinals}\nCost: {cost}\nComputers: {computers}",font=("Arial",30,"normal"))
 
     if i % 100 == 0:
         cardinals += 1*computers
