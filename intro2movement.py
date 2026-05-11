@@ -10,23 +10,23 @@ s1 = create_sprite("character1",0,-200)
 # Section 2: define controls
 def move_up():
     x = s1.xcor()
-    y = s1.ycor() + 2
-    s1.goto(x,y)
+    y = s1.ycor()
+    s1.goto(x, y+2)
         
 def move_down():
     x = s1.xcor()
-    y = s1.ycor() - 2
-    s1.goto(x,y)
+    y = s1.ycor()
+    s1.goto(x, y-2)
     
 def move_left():
-    x = s1.xcor() - 2
+    x = s1.xcor()
     y = s1.ycor() 
-    s1.goto(x,y)
+    s1.goto(x-2, y)
     
 def move_right(): 
-    x = s1.xcor() + 2
+    x = s1.xcor()
     y = s1.ycor() 
-    s1.goto(x,y)
+    s1.goto(x+2, y)
 
 # bind controls to specific keys
 window.onkeypress(move_up, "w")
