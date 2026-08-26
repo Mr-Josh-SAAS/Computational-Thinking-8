@@ -1,6 +1,6 @@
 # Computational-Thinking-8
 Repository and Codespace required for Computational Thinking 8
-Spring 2026
+Fall 2026
 
 ## Welcome to Computational Thinking 8!
 ![cardinal](Images/cardinal.gif)
